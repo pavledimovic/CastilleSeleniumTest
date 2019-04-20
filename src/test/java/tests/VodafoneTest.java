@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
+import pageObject.SetupMethods;
 import pageObject.WebElements;
 import utils.Utility;
 
@@ -22,12 +23,10 @@ public class VodafoneTest {
 	static WebDriver driver;
 
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp() throws Throwable {
 
 		// Set up system properties and go to the web page
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\PC\\Desktop\\Testiranje\\Selenium\\Chromedriver\\chromedriver.exe");
-		driver = new ChromeDriver();
+		driver = SetupMethods.setup("firefox");
 		driver.get(WebElements.URL);
 		driver.manage().window().maximize();
 	}
@@ -69,7 +68,7 @@ public class VodafoneTest {
 		DecimalFormat myFormatter = new DecimalFormat("###,###.##");
 		Number output2 = myFormatter.parse(balance);
 		if (output2.equals(sum)) {
-			System.out.println("PASS Balance number format without € is correct");
+			System.out.println("PASS Balance number format without € currency sign is correct");
 		} else
 			fail();
 

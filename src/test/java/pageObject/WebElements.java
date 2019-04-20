@@ -1,10 +1,16 @@
 package pageObject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+
 
 public class WebElements {
 
@@ -13,7 +19,7 @@ public class WebElements {
 	public WebElements(WebDriver driver1) {
 		PageFactory.initElements(driver1, this);
 	}
-
+	
 	// Base URL
 	public static String URL = "https://www.vodafone.com.mt/home";
 	// Landing Page URL
