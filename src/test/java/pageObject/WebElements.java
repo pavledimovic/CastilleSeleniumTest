@@ -29,13 +29,8 @@ public class WebElements {
 
 	@FindBy(how = How.XPATH, using = "//div[@class='fm-submit mainpage']")
 	private WebElement txtbx_Submit;
-		
-	
-    // Money Balance saldo
-	@FindBy(how = How.XPATH, using = "By.xpath(\"//strong[contains(text(),'�')]\")")
-	private WebElement txtbx_Money_Balance;
 
-	
+
     // Actions
 	public void enter_UserName(String UserName) {
 		txtbx_UserName.sendKeys(UserName);
@@ -46,10 +41,7 @@ public class WebElements {
 	public void click_submit() {
 		txtbx_Submit.click();
 	}
-	public String get_Saldo() {
-		return txtbx_Money_Balance.getText();
-	}
-
+	
 	//Sign In action
 	public void fill_Details() throws InterruptedException {
 		Thread.sleep(1000);
