@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CastilleTestSuite" duration-ms="15722" started-at="2019-04-20T11:24:36Z" finished-at="2019-04-20T11:24:52Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="15722" started-at="2019-04-20T11:24:36Z" finished-at="2019-04-20T11:24:52Z">
+      <class name="tests.VodafoneTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.VodafoneTest@6d11ceef]" name="setUp" is-config="true" duration-ms="6860" started-at="2019-04-20T11:24:36Z" finished-at="2019-04-20T11:24:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="vodafoneTest()[pri:0, instance:tests.VodafoneTest@6d11ceef]" name="vodafoneTest" duration-ms="6193" started-at="2019-04-20T11:24:43Z" finished-at="2019-04-20T11:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vodafoneTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VodafoneTest@6d11ceef]" name="tearDown" is-config="true" duration-ms="2653" started-at="2019-04-20T11:24:49Z" finished-at="2019-04-20T11:24:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=vodafoneTest status=SUCCESS method=VodafoneTest.vodafoneTest()[pri:0, instance:tests.VodafoneTest@6d11ceef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VodafoneTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- CastilleTestSuite -->
+</testng-results>
