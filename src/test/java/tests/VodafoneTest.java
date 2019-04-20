@@ -26,7 +26,7 @@ public class VodafoneTest {
 	public void setUp() throws Throwable {
 
 		// Set up system properties and go to the web page
-		driver = SetupMethods.setup("firefox");
+		driver = SetupMethods.setup("chrome");
 		driver.get(WebElements.URL);
 		driver.manage().window().maximize();
 	}
