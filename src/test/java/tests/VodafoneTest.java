@@ -53,28 +53,28 @@ public class VodafoneTest {
 		// TEST Verify that correct number format is used and that the balance is
 		// displayed in numerical form
 		double sum = 57.83;
-		String text = driver.findElement(By.xpath("//strong[contains(text(),'€')]")).getText();
-		System.out.println(text);
+		String balance = driver.findElement(By.xpath("//strong[contains(text(),'€')]")).getText();
+		System.out.println(balance);
 
 		// Format string
 		DecimalFormat euroFormat = new DecimalFormat("€#,##0.00");
-		Number output = euroFormat.parse(text);
+		Number output = euroFormat.parse(balance);
 		if (output.equals(sum)) {
 			System.out.println("PASS Balance number format is correct");
 		} else
 			fail();
         
 		// Format string with just numerical 
-		text = text.replace("€", "");
+		balance = balance.replace("€", "");
 		DecimalFormat myFormatter = new DecimalFormat("###,###.##");
-		Number output2 = myFormatter.parse(text);
+		Number output2 = myFormatter.parse(balance);
 		if (output2.equals(sum)) {
 			System.out.println("PASS Balance number format without € is correct");
 		} else
 			fail();
 
 		// Assert that the balance is displayed in numerical form
-		boolean isNumeric = text.chars().allMatch(Character::isDigit);
+		boolean isNumeric = balance.chars().allMatch(Character::isDigit);
 
 		if (isNumeric = true) {
 			System.out.println("PASS Balance is displayed in numerical form");
