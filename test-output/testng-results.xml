@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16393" started-at="2019-04-21T10:23:20Z" finished-at="2019-04-21T10:23:37Z">
+  <suite name="Default suite" duration-ms="15485" started-at="2019-04-21T11:13:34Z" finished-at="2019-04-21T11:13:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16393" started-at="2019-04-21T10:23:20Z" finished-at="2019-04-21T10:23:37Z">
+    <test name="Default test" duration-ms="15485" started-at="2019-04-21T11:13:34Z" finished-at="2019-04-21T11:13:50Z">
       <class name="tests.VodafoneTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.VodafoneTest@4923ab24]" name="setUp" is-config="true" duration-ms="6848" started-at="2019-04-21T10:23:20Z" finished-at="2019-04-21T10:23:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.VodafoneTest@4923ab24]" name="setUp" is-config="true" duration-ms="6730" started-at="2019-04-21T11:13:34Z" finished-at="2019-04-21T11:13:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="vodafoneTest()[pri:0, instance:tests.VodafoneTest@4923ab24]" name="vodafoneTest" duration-ms="6895" started-at="2019-04-21T10:23:27Z" finished-at="2019-04-21T10:23:34Z">
+        <test-method status="PASS" signature="vodafoneTest()[pri:0, instance:tests.VodafoneTest@4923ab24]" name="vodafoneTest" duration-ms="6119" started-at="2019-04-21T11:13:41Z" finished-at="2019-04-21T11:13:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vodafoneTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VodafoneTest@4923ab24]" name="tearDown" is-config="true" duration-ms="2628" started-at="2019-04-21T10:23:34Z" finished-at="2019-04-21T10:23:37Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VodafoneTest@4923ab24]" name="tearDown" is-config="true" duration-ms="2616" started-at="2019-04-21T11:13:47Z" finished-at="2019-04-21T11:13:50Z">
           <params>
             <param index="0">
               <value>

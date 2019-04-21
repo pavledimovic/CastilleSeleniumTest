@@ -12,9 +12,9 @@ public class SetupMethods {
 	static WebDriver driver;
 
 	public static WebDriver setup(String browser) throws Exception {
+		
 		// Check if parameter passed as 'chrome'
 		if (browser.equalsIgnoreCase("chrome")) {
-
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\PC\\Desktop\\Testiranje\\Selenium\\Chromedriver\\chromedriver.exe");
 			driver = new ChromeDriver();

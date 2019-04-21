@@ -18,11 +18,11 @@ import utils.Utility;
 
 public class VodafoneTest {
 
-	static WebDriver driver;
+	public static WebDriver driver;
 
 	@BeforeMethod
 	public void setUp() throws Throwable {
-
+        
 		// Set up system properties and go to the web page
 		driver = SetupMethods.setup("chrome");
 		driver.get(WebElements.URL);
@@ -51,13 +51,11 @@ public class VodafoneTest {
 		// displayed in numerical form		
 		String balance = action.get_Balance();
 		System.out.println(balance);
-		// current state in balance(must reflect actual amount from test account)
-		double sum = 57.83;
-
+		
 		// Format string
 		DecimalFormat euroFormat = new DecimalFormat("€#,##0.00");
 		Number output = euroFormat.parse(balance);
-		if (output.equals(sum)) {
+		if (output.equals((WebElements.sum))) {
 			System.out.println("PASS Balance number format is correct");
 		} else
 			fail();
@@ -66,7 +64,7 @@ public class VodafoneTest {
 		balance = balance.replace("€", "");
 		DecimalFormat myFormatter = new DecimalFormat("###,###.##");
 		Number output2 = myFormatter.parse(balance);
-		if (output2.equals(sum)) {
+		if (output2.equals((WebElements.sum))) {
 			System.out.println("PASS Balance number format without € currency sign is correct");
 		} else
 			fail();

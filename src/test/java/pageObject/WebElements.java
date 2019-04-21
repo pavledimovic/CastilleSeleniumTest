@@ -19,6 +19,8 @@ public class WebElements {
 	public static String URL = "https://www.vodafone.com.mt/home";
 	// Landing Page URL
 	public static String LandingPage = "https://www.vodafone.com.mt/myVodafone-postpaid";
+	// State in balance(must reflect actual state in test account)
+	public static double sum = 57.83;
 
 	
 	// Credentials
@@ -60,4 +62,5 @@ public class WebElements {
 	public void balance() throws Exception {
 		get_Balance();
 	}
+	
 }
