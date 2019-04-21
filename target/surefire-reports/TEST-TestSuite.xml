@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="16.853" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="15.746" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -59,10 +59,10 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.211-b12"/>
-    <property name="classworlds.conf" value="C:\Users\PC\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6955401964987612120.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\PC\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7285804608766711524.tmp"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="vodafoneTest" classname="tests.VodafoneTest" time="6.635"/>
+  <testcase name="vodafoneTest" classname="tests.VodafoneTest" time="6.229"/>
 </testsuite>

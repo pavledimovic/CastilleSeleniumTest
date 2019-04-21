@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="CastilleTestSuite" duration-ms="16466" started-at="2019-04-20T19:01:51Z" finished-at="2019-04-20T19:02:08Z">
+  <suite name="CastilleTestSuite" duration-ms="15433" started-at="2019-04-21T09:43:06Z" finished-at="2019-04-21T09:43:22Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="16466" started-at="2019-04-20T19:01:51Z" finished-at="2019-04-20T19:02:08Z">
+    <test name="Test1" duration-ms="15433" started-at="2019-04-21T09:43:06Z" finished-at="2019-04-21T09:43:22Z">
       <class name="tests.VodafoneTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.VodafoneTest@1b29d52b]" name="setUp" is-config="true" duration-ms="7144" started-at="2019-04-20T19:01:51Z" finished-at="2019-04-20T19:01:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.VodafoneTest@3162743f]" name="setUp" is-config="true" duration-ms="6585" started-at="2019-04-21T09:43:06Z" finished-at="2019-04-21T09:43:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="vodafoneTest()[pri:0, instance:tests.VodafoneTest@1b29d52b]" name="vodafoneTest" duration-ms="6635" started-at="2019-04-20T19:01:58Z" finished-at="2019-04-20T19:02:05Z">
+        <test-method status="PASS" signature="vodafoneTest()[pri:0, instance:tests.VodafoneTest@3162743f]" name="vodafoneTest" duration-ms="6228" started-at="2019-04-21T09:43:13Z" finished-at="2019-04-21T09:43:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vodafoneTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VodafoneTest@1b29d52b]" name="tearDown" is-config="true" duration-ms="2668" started-at="2019-04-20T19:02:05Z" finished-at="2019-04-20T19:02:08Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VodafoneTest@3162743f]" name="tearDown" is-config="true" duration-ms="2600" started-at="2019-04-21T09:43:19Z" finished-at="2019-04-21T09:43:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=vodafoneTest status=SUCCESS method=VodafoneTest.vodafoneTest()[pri:0, instance:tests.VodafoneTest@1b29d52b] output={null}]]]>
+                <![CDATA[[TestResult name=vodafoneTest status=SUCCESS method=VodafoneTest.vodafoneTest()[pri:0, instance:tests.VodafoneTest@3162743f] output={null}]]]>
               </value>
             </param>
           </params>

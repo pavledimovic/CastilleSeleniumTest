@@ -5,9 +5,7 @@ import static org.testng.Assert.fail;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -50,10 +48,11 @@ public class VodafoneTest {
 		Assert.assertEquals(redirectURL, WebElements.LandingPage);
 
 		// TEST Verify that correct number format is used and that the balance is
-		// displayed in numerical form
-		double sum = 57.83;
-		String balance = driver.findElement(By.xpath("//strong[contains(text(),'€')]")).getText();
+		// displayed in numerical form		
+		String balance = action.get_Balance();
 		System.out.println(balance);
+		// current state in balance(must reflect actual amount from test account)
+		double sum = 57.83;
 
 		// Format string
 		DecimalFormat euroFormat = new DecimalFormat("€#,##0.00");
@@ -88,7 +87,7 @@ public class VodafoneTest {
 		// If test fail Selenium will take a screenshot
 		if (ITestResult.FAILURE == result.getStatus()) {
 			Utility.captureScreenshot(driver, result.getName());
-			System.out.print("FAIL VodafoneTest");
+			System.out.print("FAIL balance format is incorrect-");
 		}
 		Thread.sleep(2000);
 		driver.quit();

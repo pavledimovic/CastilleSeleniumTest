@@ -1,12 +1,7 @@
 package pageObject;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -35,6 +30,9 @@ public class WebElements {
 
 	@FindBy(how = How.XPATH, using = "//div[@class='fm-submit mainpage']")
 	private WebElement txtbx_Submit;
+	
+	@FindBy(how = How.XPATH, using = "//strong[contains(text(),'€')]")
+	private WebElement txtbx_Balance;
 
 
     // Actions
@@ -47,6 +45,9 @@ public class WebElements {
 	public void click_submit() {
 		txtbx_Submit.click();
 	}
+	public String get_Balance() {
+		return txtbx_Balance.getText();
+	}
 	
 	//Sign In action
 	public void fill_Details() throws InterruptedException {
@@ -54,5 +55,9 @@ public class WebElements {
 		enter_UserName("testqa2");
 		enter_Password("Voda1234");
 		click_submit();
+	}
+	//Get Balance
+	public void balance() throws Exception {
+		get_Balance();
 	}
 }

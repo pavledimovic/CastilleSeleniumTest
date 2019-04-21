@@ -3,6 +3,7 @@
 <suite name="CastilleTestSuite" parallel="none"> 
   <test name="Test1">
     <classes>    
+      <class name="tests.VodafoneTest"/> 
       <class name="tests.VodafoneTest"/>                   
     </classes>
   </test>
