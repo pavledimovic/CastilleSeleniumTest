@@ -22,7 +22,7 @@ public class WebElements {
 	// State in balance(must reflect actual state in test account)
 	public static double sum = 57.83;
 
-	
+	// Elements
 	// Credentials
 	@FindBy(how = How.XPATH, using = "//div[@class='fm-data alignText']//input[@placeholder='Username']")
 	private WebElement txtbx_UserName;
@@ -51,7 +51,7 @@ public class WebElements {
 		return txtbx_Balance.getText();
 	}
 	
-	//Sign In action
+	//Sign In 
 	public void fill_Details() throws InterruptedException {
 		Thread.sleep(1000);
 		enter_UserName("testqa2");
