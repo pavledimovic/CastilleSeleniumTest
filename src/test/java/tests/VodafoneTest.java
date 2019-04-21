@@ -5,7 +5,9 @@ import static org.testng.Assert.fail;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +24,7 @@ public class VodafoneTest {
 
 	@BeforeMethod
 	public void setUp() throws Throwable {
-        
+
 		// Set up system properties and go to the web page
 		driver = SetupMethods.setup("chrome");
 		driver.get(WebElements.URL);
@@ -30,7 +32,7 @@ public class VodafoneTest {
 	}
 
 	@Test
-	public void vodafoneTest() throws InterruptedException, ParseException {
+	public void vodafoneTest() throws Exception {
 
 		// Fill credentials with valid user name and password and submit them
 		WebElements action = new WebElements(driver);
@@ -47,20 +49,25 @@ public class VodafoneTest {
 		String redirectURL = driver.getCurrentUrl();
 		Assert.assertEquals(redirectURL, WebElements.LandingPage);
 
+		// TEST that box with "My Pending Balance is :" is displayed
+		boolean textBox = action.isTextBoxDisplayed();
+		if (textBox == true) {
+			System.out.println("PASS TextBox is diplayed");
+		} else
+			fail();
+
 		// TEST Verify that correct number format is used and that the balance is
-		// displayed in numerical form		
-		String balance = action.get_Balance();
-		System.out.println(balance);
-		
+		// displayed in numerical form
 		// Format string
+		String balance = action.get_Balance();
 		DecimalFormat euroFormat = new DecimalFormat("€#,##0.00");
 		Number output = euroFormat.parse(balance);
 		if (output.equals((WebElements.sum))) {
 			System.out.println("PASS Balance number format is correct");
 		} else
 			fail();
-        
-		// Format string with just numerical 
+
+		// Format string with just numerical
 		balance = balance.replace("€", "");
 		DecimalFormat myFormatter = new DecimalFormat("###,###.##");
 		Number output2 = myFormatter.parse(balance);
@@ -85,7 +92,7 @@ public class VodafoneTest {
 		// If test fail Selenium will take a screenshot
 		if (ITestResult.FAILURE == result.getStatus()) {
 			Utility.captureScreenshot(driver, result.getName());
-			System.out.print("FAIL balance format is incorrect-");
+			System.out.print("FAIL VodafoneTest-");
 		}
 		Thread.sleep(2000);
 		driver.quit();

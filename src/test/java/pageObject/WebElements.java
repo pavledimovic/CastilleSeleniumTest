@@ -1,5 +1,6 @@
 package pageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,10 +33,13 @@ public class WebElements {
 
 	@FindBy(how = How.XPATH, using = "//div[@class='fm-submit mainpage']")
 	private WebElement txtbx_Submit;
-	
+	// Balance
 	@FindBy(how = How.XPATH, using = "//strong[contains(text(),'€')]")
-	private WebElement txtbx_Balance;
-
+	private static WebElement txtbx_Balance;
+	// Balance text box
+	@FindBy(how = How.XPATH, using = "//p[contains(text(),'My Pending Balance is :')]")
+	public WebElement txtbx_BalanceTextBox;
+	
 
     // Actions
 	public void enter_UserName(String UserName) {
@@ -50,6 +54,9 @@ public class WebElements {
 	public String get_Balance() {
 		return txtbx_Balance.getText();
 	}
+	public boolean textBox() {
+		return txtbx_BalanceTextBox.isDisplayed();
+	}
 	
 	//Sign In 
 	public void fill_Details() throws InterruptedException {
@@ -61,6 +68,10 @@ public class WebElements {
 	//Get Balance
 	public void balance() throws Exception {
 		get_Balance();
+	}
+	//Is displayed
+	public boolean isTextBoxDisplayed() throws Exception {
+		return textBox();
 	}
 	
 }
