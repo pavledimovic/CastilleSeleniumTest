@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="16638" started-at="2019-04-21T11:55:27Z" finished-at="2019-04-21T11:55:44Z">
     <groups>
     </groups>
@@ -16,6 +17,22 @@
           </reporter-output>
         </test-method> <!-- vodafoneTest -->
         <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VodafoneTest@4923ab24]" name="tearDown" is-config="true" duration-ms="2619" started-at="2019-04-21T11:55:41Z" finished-at="2019-04-21T11:55:44Z">
+=======
+  <suite name="CastilleTestSuite" duration-ms="15601" started-at="2019-04-20T10:52:16Z" finished-at="2019-04-20T10:52:32Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="15601" started-at="2019-04-20T10:52:16Z" finished-at="2019-04-20T10:52:32Z">
+      <class name="tests.VodafoneTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.VodafoneTest@371a67ec]" name="setUp" is-config="true" duration-ms="6663" started-at="2019-04-20T10:52:16Z" finished-at="2019-04-20T10:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="vodafoneTest()[pri:0, instance:tests.VodafoneTest@371a67ec]" name="vodafoneTest" duration-ms="6300" started-at="2019-04-20T10:52:23Z" finished-at="2019-04-20T10:52:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vodafoneTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VodafoneTest@371a67ec]" name="tearDown" is-config="true" duration-ms="2617" started-at="2019-04-20T10:52:29Z" finished-at="2019-04-20T10:52:32Z">
+>>>>>>> test
           <params>
             <param index="0">
               <value>
@@ -27,6 +44,6 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.VodafoneTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- CastilleTestSuite -->
 </testng-results>
